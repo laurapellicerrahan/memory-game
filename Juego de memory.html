@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Juego de memory.css" />
+    <title>Juego de Memory</title>
+</head>
+<body>
+    <section>
+        <section class="game">
+            <section class="left-section">
+                <section id="container-players">
+                    <div id="turn">
+                        <p>Es el turno de</p>
+                        <div id="input-turn">Jugador 1</div>
+                    </div>
+                    <div class="players">
+                        <fieldset class="marcador">
+                            <legend>Jugador 1</legend>
+                            <div id="Jugador1" value="">0</div>
+                        </fieldset>
+                        <fieldset class="marcador">
+                            <legend>Jugador 2</legend>
+                            <div id="Jugador2" value="">0</div>
+                        </fieldset>
+                    </div>
+                </section>
+                <div class="title-and-image">
+                    <h1 id="title">MEMORY GAME</h1>
+                    <img id="picture-brain" src="pictureBrain.png" alt="foto-cerebros" />
+                </div>
+            </section>
+            <section class="game-restart">
+                <section class="right-section">
+                    <button id="0" class="card" onclick="showCard(0)"></button>
+                    <button id="1" class="card" onclick="showCard(1)"></button>
+                    <button id="2" class="card" onclick="showCard(2)"></button>
+                    <button id="3" class="card" onclick="showCard(3)"></button>
+                    <button id="4" class="card" onclick="showCard(4)"></button>
+                    <button id="5" class="card" onclick="showCard(5)"></button>
+                    <button id="6" class="card" onclick="showCard(6)"></button>
+                    <button id="7" class="card" onclick="showCard(7)"></button>
+                    <button id="8" class="card" onclick="showCard(8)"></button>
+                    <button id="9" class="card" onclick="showCard(9)"></button>
+                    <button id="10" class="card" onclick="showCard(10)"></button>
+                    <button id="11" class="card" onclick="showCard(11)"></button>
+                    <button id="12" class="card" onclick="showCard(12)"></button>
+                    <button id="13" class="card" onclick="showCard(13)"></button>
+                    <button id="14" class="card" onclick="showCard(14)"></button>
+                    <button id="15" class="card" onclick="showCard(15)"></button>
+                    <button id="16" class="card" onclick="showCard(16)"></button>
+                    <button id="17" class="card" onclick="showCard(17)"></button>
+                    <button id="18" class="card" onclick="showCard(18)"></button>
+                    <button id="19" class="card" onclick="showCard(19)"></button>
+                </section>
+                <button class="restart" onclick="restart()">
+                    <span class="button-text">RESTART</span>
+                    <span class="button-icon">
+                        <ion-icon name="reload-outline"></ion-icon>
+                    </span>
+                </button>
+            </section>
+        </section>
+        <div class="popup">
+            <img id="fireworks" src="rocket.jpg" alt="foto-confetti" />
+            <div class="popup-player" id="popup-player"></div>
+            <button onclick="restart()" class="button-popup">CERRAR</button>
+        </div>
+    </section>
+    <script src="Juego memory.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

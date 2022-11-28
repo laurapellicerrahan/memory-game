@@ -1,0 +1,185 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.game{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-and-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcador{
+    border: 2px solid rgb(143, 227, 227);
+    border-radius: 8px;
+}
+
+#title{
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(143, 227, 227);
+}
+
+#picture-brain{
+    width: 400px;
+    height: 400px;
+}
+
+.right-section {
+    width: 50%;
+    margin-right: 16px;
+    display: grid;
+    background-color: rgb(143, 227, 227);
+    width: 700px;
+    height: 600px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 16px;
+    padding: 16px;
+    align-items: center;
+}
+
+.left-section{
+    width: 50%;
+    margin-left: 16px;
+}
+
+.card {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+    text-align: center;
+    margin: 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 4px 8px 0px 0px rgb(241, 240, 240);
+    color: black;
+}
+
+.card:hover{
+    background-color: antiquewhite;
+}
+
+.players{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(143, 227, 227);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#container-players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-turn{
+    border: 2px solid rgb(143, 227, 227);
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#turn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(143, 227, 227);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.restart{
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(143, 227, 227);
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-restart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fireworks{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.popup{
+    display: none;
+}
+
+.show-popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: white;
+    box-shadow: 0px 2px 8px 2px rgb(217, 217, 217);
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.button-popup{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(143, 227, 227);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-player{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(118, 168, 151);
+}
